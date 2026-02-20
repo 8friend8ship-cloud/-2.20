@@ -1,0 +1,5 @@
+{
+  "name": "인테리어 전문가 AI 2.20",
+  "description": "AI를 활용하여 인테리어 및 건축 디자인 제안, 견적서, 공정표를 생성하고 DIY 자재 선택 및 전문가 연결을 도와주는 웹 애플리케이션입니다.",
+  "requestFramePermissions": []
+}
