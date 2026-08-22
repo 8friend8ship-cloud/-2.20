@@ -1,0 +1,12 @@
+{
+  "version":"FRONT_REQUIREMENT_REVERSE_FACTORY_V1_20260823",
+  "appIds":["APP_INTERIOR_AI220_REFERENCE"],
+  "controlTargetId":"FPC_INTERIOR_20260823",
+  "cycleMinutes":10,
+  "role":"legacy/complement Interior AI Studio reference; consume canonical APP_INTERIOR factory data for diff/reuse only and do not operate a second independent estimate/Queens factory",
+  "pipeline":["APP_INTERIOR_CANONICAL_CONSUME","LEGACY_FEATURE_DIFF","SELECTIVE_REUSE_PROPOSAL","CENTRAL_REINGEST"],
+  "qualityGate":{"noIndependentFactory":true,"noBrowserGeminiKey":true,"canonicalEstimateNumbersOnly":true},
+  "storage":{"reference":"GITHUB_DIFF_POINTER","data":"APP_INTERIOR_CANONICAL_IDS"},
+  "physicalTriggerPolicy":"NO_INDEPENDENT_TRIGGER",
+  "approvalBoundary":["MERGE_TO_CANONICAL_INTERIOR","NEW_API_OR_SECRET","PUBLIC_PRODUCTION"]
+}
